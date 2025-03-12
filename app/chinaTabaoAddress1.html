@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="./style/china-tabao-address1.css">
+   <link rel="stylesheet" href="./style/foshan-warehouse.css">
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+   <div class="w-full h-screen">
+      <!-- <img class="absolute w-full h-screen -z-40" src="./image/Rectangle 17969.png" alt=""> -->
+      <!-- <h1 class="text-white text-xl text-center py-5 font-bold">Pindoudou Address</h1> -->
+      <div class="w-[95%] mx-auto pb-[32px] pt-[16px]  rounded-lg shadow-lg">
+         <div class="content flex justify-around">
+            <div class="  py-[7px]">收货人</div>
+            <div class="w-[283px] h-[52px] items-center flex justify-between  rounded-md copy-text"
+               style="background-color: #F6FAFF;">
+               <div class="relative left-[11px] text-[14px]">1111LU</div>
+               <div class=" copy-icon" onclick="copyToClipboard(this)"><img src="./image/CopyNew.svg" alt=""></div>
+            </div>
+         </div>
+         <div class="content flex justify-around mt-5">
+            <div class="  py-[7px]">手机号码</div>
+            <div class="w-[283px] h-[52px] items-center flex justify-between  rounded-md copy-text"
+               style="background-color: #F6FAFF;">
+               <div class="relative left-[11px] text-[14px]">18029266251</div>
+               <div class=" copy-icon" onclick="copyToClipboard(this)"><img src="./image/CopyNew.svg" alt=""></div>
+            </div>
+         </div>
+         <div class="content flex justify-around mt-5">
+            <div class="  py-[7px]">所在地区</div>
+            <div class="w-[283px] h-[52px] items-center flex justify-between  rounded-md copy-text"
+               style="background-color: #F6FAFF;">
+               <div class="relative left-[11px] text-[14px]">广奈省佛山市褝城区南庄鎮</div>
+               <div class=" copy-icon" onclick="copyToClipboard(this)"><img src="./image/CopyNew.svg" alt=""></div>
+            </div>
+         </div>
+         <div class="content flex justify-around mt-5">
+            <div class="  py-[7px]">详细地址</div>
+            <div class="w-[283px] h-[94px] items-center flex justify-between  rounded-md copy-text"
+               style="background-color: #F6FAFF;">
+               <div class="relative left-[11px] w-[85%] text-[14px]">广东省 佛山市 禅城区 唛头1111LU陆运 南庄紫洞北路116号 东岗工业区欧驰企业二仓路口直入
+                  18029266251 收货人: 1111LU</div>
+               <div class=" copy-icon" onclick="copyToClipboard(this)"><img src="./image/CopyNew.svg" alt=""></div>
+            </div>
+         </div>
+
+         
+   </div>
+   <div class="cursor-pointer w-[340px] p-[4px]  mx-auto mt-3 rounded-lg"
+   style="backdrop-filter: blur(4px);background: #FFFFFF;" onclick="toggleVideo()">
+   <div class="flex justify-around  items-center  click-to-video" style="background: #000000;
+
+   border-radius: 8px;
+   ">
+       <div class="flex items-center"><img style="width: 32.40px;
+           height: 24.03px;
+           top: 5.92px;
+           left: 3.36px;
+          
+           " src="./image/youTubex4.png" alt=""></div>
+       <p class=" text-white text-[13px] p-[1px]" style="letter-spacing: 0%;">Video របៀបដាក់អាសយដ្ឋានក្នុង App ទិញទំនិញ</p>
+       <div><img style="width: 27.87px;
+           height: 26px;
+           position: relative;
+           top: 13px;
+           left:10px;
+           " src="./image/clickx4.png" alt=""></div>
+   </div>
+</div>
+<div class="flex justify-center">
+   <div class="show-video flex w-[70%] mt-6 pb-5 hidden" id="video-container">
+       <iframe class="w-full h-full" src="https://www.youtube.com/embed/ep8DxZMw_JE" frameborder="0"
+           allowfullscreen></iframe>
+   </div>
+</div>
+   <div class="flex justify-center">
+      <div class="show-video flex w-[70%] mt-6 pb-5 hidden" id="video-container">
+         <iframe class="w-full h-full" src="https://www.youtube.com/embed/ep8DxZMw_JE" frameborder="0"
+            allowfullscreen></iframe>
+      </div>
+   </div>
+   <div style="backdrop-filter: blur(16px)" id="copy-message"
+      class="hidden z-40 fixed top-10 w-[370px] rounded-lg  left-1/2 transform -translate-x-1/2  text-white py-2 px-4 rounded-md  shadow-md">
+      <div class="flex items-center w-full ">
+         <div class="w-[15%]">
+            <div class="w-[35px] bg-white rounded-full h-[35px] flex justify-center items-center"><img
+                  src="./image/copy 2.png" alt="">
+            </div>
+         </div>
+         <div class="w-[80%]">
+            <div style="color: #000000; font-size: 14px;">Address has Copied!</div>
+            <p id="copied-text" style="color: #000000;   font-size: 14px;"></p>
+         </div>
+      </div>
+   </div>
+   
+   <script src="./js/copyAddress.js"></script>
+   <!-- <script src="./js/pinduoduo-address.js"></script> -->
+   <script src="./js/china-tabao-address.js"></script>
+</body>
+
+</html>

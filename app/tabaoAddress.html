@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="./style/foshan-warehouse.css">
+    <link rel="stylesheet" href="./style/china-tabao-address1.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- <div class="w-full bg-blue-600 h-16 text-center text-lg text-white">test Menu</div> -->
+    <div class="w-full min-h-screen relative pb-10"
+        style="background: linear-gradient(180deg, rgba(255, 97, 0, 0.7) -1.5%, rgba(255, 98, 1, 0) 83.66%);">
+        <img class="absolute top-0 left-0 w-full h-full object-cover -z-40" src="./image/BG.png" alt="">
+        <h1 class="text-white text-xl text-center pt-3 pb-2 font-bold ">Tabao Address</h1>
+        <div style="width: 97%;
+        height: 395px;
+        border-radius: 12px;
+        padding-top: 22px;
+        padding-right: 10px;
+        padding-bottom: 22px;
+        padding-left: 12px;
+        gap: 16px;
+        ;
+        " class="bg-white mx-auto pb-5">
+            <div class="gap-[4px] py-[4px] ">
+                <div class="flex  items-center ">
+                    <div><span style="color: #FF602E;">*</span>广东省佛山市禅城区南庄镇</div>
+                    <div
+                        style="width: 15px;height: 15px;border-radius: 50%;background: #00000008;display: flex; justify-content: center;align-items: center;">
+                        <img src="./image/icon_SVG.svg" alt=""></div>
+                </div>
+            </div>
+
+            <div class="gap-[4px] py-[4px] text-[#7F888F]"><span style="color: #FF602E;">*</span>详细地址</div>
+            <div class="content flex  items-center">
+                <div class="w-[100%] flex gap-[4px] py-[4px] items-center ">
+                    <div class="w-[100%] flex justify-between items-center gap-[4px] rounded-md copy-text" id="address">
+                        <div class="text-[16px]">唛头427LJH陆运南庄紫洞北路116号东岗工业区欧驰企业二仓路口</div>
+                    </div>
+                    <div class=" cursor-pointer" onclick="copyToClipboard(this)">
+                        <img src="./image/CopyNew.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <div class="w-[350px] gap-[4px] py-[7px] ">
+                <div class="w-[100%]  h-[0.66px]" style="border: 1.2px solid #F7F7F7"></div>
+            </div>
+            <div class="gap-[4px] py-[7px] text-[#7F888F] text-[16px]"><span style="color: #FF602E;">*</span>收货人名字</div>
+            <div class="content flex  items-center ">
+                <div class="w-[100%] flex items-center copy-text" data-text="427LJH" id="recipient">
+                    <div class=" copy-text text-[16px] gap-[4px] py-[7px]">427LJH</div>
+                </div>
+                <div class="cursor-pointer" onclick="copyToClipboard(this)">
+                    <img src="./image/CopyNew.svg" alt="">
+                </div>
+            </div>
+            <div class="w-[350px]  gap-[4px] py-[4px] ">
+                <div class="w-[100%] h-[0.66px]" style="border: 1.2px solid #F7F7F7"></div>
+            </div>
+            <div class="gap-[4px] py-[4px] text-[#7F888F] text-[16px]"><span style="color: #FF602E;">*</span>手机号</div>
+            <div class="content flex  items-center">
+                <div class="w-[100%]  flex items-center gap-2 rounded-md copy-text" id="phone">
+                    <div class="flex gap-1">
+                        <span class="text-[16px]">+86</span> <img src="./image/icon_SVG.svg" alt="">
+                        <div class="text-[16px] ">18029266251</div>
+                    </div>
+
+                </div>
+                <div class="cursor-pointer" onclick="copyToClipboard(this)">
+                    <img src="./image/CopyNew.svg" alt="">
+                </div>
+            </div>
+            <div onclick="copyFullAddress()"
+                class="flex cursor-pointer justify-center gap-[8px] text-white items-center w-[95%] ps-[4px] pt-[6px] pe-[4px] pb-[6px] rounded-md mx-auto mt-10"
+                style="background: #FF602E;">
+                <div>Copy Address</div>
+                <img src="./image/CopyNewWhite.svg" alt="">
+            </div>
+        </div>
+        <div class="cursor-pointer w-[340px] p-[4px]  mx-auto mt-3 rounded-lg"
+            style="backdrop-filter: blur(4px);background: #FFFFFF;" onclick="toggleVideo()">
+            <div class="flex justify-around  items-center  click-to-video" style="background: #000000;
+      
+            border-radius: 8px;
+            ">
+                <div class="flex items-center"><img style="width: 32.40px;
+                    height: 24.03px;
+                    top: 5.92px;
+                    left: 3.36px;
+                   
+                    " src="./image/youTubex4.png" alt=""></div>
+                <p class=" text-white text-[13px] p-[1px]" style="letter-spacing: 0%;">Video របៀបដាក់អាសយដ្ឋានក្នុង App ទិញទំនិញ</p>
+                <div><img style="width: 27.87px;
+                    height: 26px;
+                    position: relative;
+                    top: 13px;
+                    left:10px;
+                    " src="./image/clickx4.png" alt=""></div>
+            </div>
+        </div>
+        <div class="flex justify-center">
+            <div class="show-video flex w-[70%] mt-6 pb-5 hidden" id="video-container">
+                <iframe class="w-full h-full" src="https://www.youtube.com/embed/ep8DxZMw_JE" frameborder="0"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+            <div class="flex justify-center">
+               <div class="show-video flex w-[70%] mt-6 pb-5 hidden" id="video-container">
+                  <iframe class="w-full h-full" src="https://www.youtube.com/embed/ep8DxZMw_JE" frameborder="0"
+                     allowfullscreen></iframe>
+               </div>
+            </div>
+         </div>
+
+        <div style="backdrop-filter: blur(16px);z-index: 10000; " id="copy-message"
+            class="hidden  w-[370px] fixed top-10 rounded-lg  left-1/2 transform -translate-x-1/2  text-white py-2 px-4 rounded-md  shadow-md">
+            <div class="flex items-center w-full ">
+                <div class="w-[15%]">
+                    <div class="w-[35px] bg-white rounded-full h-[35px] "><img src="./image/Copy_SVG.svg" alt="">
+                    </div>
+                </div>
+                <div class="w-[80%]">
+                    <div style="color: #000000; font-size: 14px;">Address has Copied!</div>
+                    <p id="copied-text" style="color: #000000;   font-size: 14px;"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="./js/taobaoAddress.js"></script> -->
+    <script src="./js/china-tabao-address.js"></script>
+    <script src="./js/copyAddress.js"></script>
+
+</body>
+
+</html>
